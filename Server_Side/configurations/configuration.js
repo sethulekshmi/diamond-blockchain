@@ -90,7 +90,7 @@ config.users = [
     {
         enrollmentID: 'Beon_Group',
         attributes: [
-            {name: 'role', value: 'dealer'},
+            {name: 'role', value: 'dealership'},
             {name: 'username', value: 'Beon_Group'}
         ],
         registrar: {},
@@ -100,7 +100,7 @@ config.users = [
     {
         enrollmentID: 'Milescape',
         attributes: [
-            {name: 'role', value: 'dealer'},
+            {name: 'role', value: 'dealership'},
             {name: 'username', value: 'Milescape'}
         ],
         registrar: {},
@@ -110,7 +110,7 @@ config.users = [
     {
         enrollmentID: 'Viewers_laxmi_impex',
         attributes: [
-            {name: 'role', value: 'dealer'},
+            {name: 'role', value: 'dealership'},
             {name: 'username', value: 'Viewers_laxmi_impex'}
         ],
         registrar: {},
@@ -180,7 +180,7 @@ config.users = [
     {
         enrollmentID: 'Cray_Bros_London_Ltd',
         attributes: [
-            {name: 'role', value: 'cutters'},
+            {name: 'role', value: 'cutter'},
             {name: 'username', value: 'Cray_Bros_London_Ltd'}
         ],
         registrar: {},
@@ -190,7 +190,7 @@ config.users = [
     {
         enrollmentID: 'Aston_Cutting_Centre',
         attributes: [
-            {name: 'role', value: 'cutters'},
+            {name: 'role', value: 'cutter'},
             {name: 'username', value: 'Aston_Scrap_Centre'}
         ],
         registrar: {},
@@ -200,7 +200,7 @@ config.users = [
     {
         enrollmentID: 'ScrapIt_UK',
         attributes: [
-            {name: 'role', value: 'cutters'},
+            {name: 'role', value: 'cutter'},
             {name: 'username', value: 'ScrapIt_UK'}
         ],
         registrar: {},
@@ -210,7 +210,7 @@ config.users = [
     {
         enrollmentID: 'Adora',
         attributes: [
-            {name: 'role', value: 'jewellery_makers'},
+            {name: 'role', value: 'jewellery_maker'},
             {name: 'username', value: 'Adora'}
         ],
         registrar: {},
@@ -220,7 +220,7 @@ config.users = [
     {
         enrollmentID: 'Tanishq',
         attributes: [
-            {name: 'role', value: 'jewellery_makers'},
+            {name: 'role', value: 'jewellery_maker'},
             {name: 'username', value: 'Tanishq'}
         ],
         registrar: {},
@@ -230,7 +230,7 @@ config.users = [
     {
         enrollmentID: 'Kiah',
         attributes: [
-            {name: 'role', value: 'jewellery_makers'},
+            {name: 'role', value: 'jewellery_maker'},
             {name: 'username', value: 'Kiah'}
         ],
         registrar: {},
@@ -241,7 +241,7 @@ config.users = [
     {
         enrollmentID: 'Gaurav_Singh',
         attributes: [
-            {name: 'role', value: 'customers'},
+            {name: 'role', value: 'customer'},
             {name: 'username', value: 'Gaurav_Singh'}
         ],
         registrar: {},
@@ -251,7 +251,7 @@ config.users = [
     {
         enrollmentID: 'Adwaith',
         attributes: [
-            {name: 'role', value: 'customers'},
+            {name: 'role', value: 'customer'},
             {name: 'username', value: 'Adwaith'}
         ],
         registrar: {},
@@ -261,7 +261,7 @@ config.users = [
     {
         enrollmentID: 'Amardev',
         attributes: [
-            {name: 'role', value: 'customers'},
+            {name: 'role', value: 'customer'},
             {name: 'username', value: 'Amardev'}
         ],
         registrar: {},
