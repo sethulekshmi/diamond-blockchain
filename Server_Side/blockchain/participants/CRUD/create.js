@@ -17,29 +17,29 @@ let registerUser = function(req, res) {
 
     switch(req.body.affiliation)
     {
-   	case "Miner":
-			numberAff = "0001";
+   	case 'Miner':
+			numberAff = '0001';
 			break;
-		case "Distributor":
-			numberAff = "0002";
+		case 'Distributor':
+			numberAff = '0002';
 			break;
-		case "Dealership":
-			numberAff = "0003";
+		case 'Dealership':
+			numberAff = '0003';
 			break;
-		case "Buyer":
-			numberAff = "0004";
+		case 'Buyer':
+			numberAff = '0004';
 			break;
-		case "Trader":
-			numberAff = "0005";
+		case 'Trader':
+			numberAff = '0005';
 			break;
-		case "Cutter":
-			numberAff = "0006";
+		case 'Cutter':
+			numberAff = '0006';
 			break;
-		case "Jewellery_maker":
-			numberAff = "0007";
+		case 'Jewellery_maker':
+			numberAff = '0007';
 			break;
-		case "Customer":
-			numberAff = "0008";
+		case 'Customer':
+			numberAff = '0008';
 			break;
     }
 
@@ -71,7 +71,7 @@ function loginUser(req, res, secret)
         }
         else
         {
-            if(counter >= 5){
+            if(counter >= 8){
                 counter = 0;
                 res.status(400);
                 var error = {};
@@ -120,29 +120,29 @@ function writeUserToFile(req, res, secret)
     {
         switch(req.body.affiliation)
         {
-       case "Miner":
-				userType="miner";
+       case 'Miner':
+				userType='miners';
 				break;
-			case "Distributor":
-				userType="distributor";
+			case 'Distributor':
+				userType='distributors';
 				break;
-			case "Dealership":
-				userType="dealership";
+			case 'Dealership':
+				userType='dealerships';
 				break;
-			case "Buyer":
-				userType="buyer";
+			case 'Buyer':
+				userType='buyers';
 				break;
 			case "Trader":
-				userType="trader";
+				userType="traders";
 				break;
-			case "Cutter":
-				userType="cutter";
+			case 'Cutter':
+				userType='cutters';
 				break;
-			case "Jewellery_maker":
-				userType="jewellery_maker";
+			case 'Jewellery_maker':
+				userType='jewellery_makers';
 				break;
-			case "Customer":
-				userType="customer";
+			case 'Customer':
+				userType='customers';
 				break;
         }
         userNumber = newData[userType].length;
@@ -153,7 +153,7 @@ function writeUserToFile(req, res, secret)
         newData[userType][userNumber].address_line_2 = add_slashes(req.body.city);
         newData[userType][userNumber].postcode = req.body.postcode;
 
-        let configData = 'config.participants.users.'+userType+'['+userNumber+'] = {}\n';
+        let configData ='config.participants.users.'+userType+'['+userNumber+'] = {}\n';
         configData += 'config.participants.users.'+userType+'['+userNumber+'].company = \''+escape_quote(add_slashes(req.body.company))+'\'\n';
         configData += 'config.participants.users.'+userType+'['+userNumber+'].type = \''+req.body.affiliation+'\'\n';
         configData += 'config.participants.users.'+userType+'['+userNumber+'].user = \''+escape_quote(add_slashes(req.body.username))+'\'\n';
